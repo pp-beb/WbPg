@@ -1,5 +1,4 @@
 document.addEventListener('DOMContentLoaded', () => {
-  
   document.querySelectorAll('nav a').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
       e.preventDefault();
@@ -9,183 +8,51 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
+ 
   particlesJS("particles-js", {
     "particles": {
-      "number": {
-        "value": 80,
-        "density": {
-          "enable": true,
-          "value_area": 800
-        }
-      },
-      "color": {
-        "value": "#ffffff"
-      },
-      "shape": {
-        "type": "circle",
-        "stroke": {
-          "width": 0,
-          "color": "#000000"
-        },
-        "polygon": {
-          "nb_sides": 5
-        },
-        "image": {
-          "src": "img/github.svg",
-          "width": 100,
-          "height": 100
-        }
-      },
-      "opacity": {
-        "value": 0.5,
-        "random": false,
-        "anim": {
-          "enable": false,
-          "speed": 1,
-          "opacity_min": 0.1,
-          "sync": false
-        }
-      },
-      "size": {
-        "value": 3,
-        "random": true,
-        "anim": {
-          "enable": false,
-          "speed": 40,
-          "size_min": 0.1,
-          "sync": false
-        }
-      },
-      "line_linked": {
-        "enable": true,
-        "distance": 150,
-        "color": "#ffffff",
-        "opacity": 0.4,
-        "width": 1
-      },
-      "move": {
-        "enable": true,
-        "speed": 6,
-        "direction": "none",
-        "random": false,
-        "straight": false,
-        "out_mode": "out",
-        "bounce": false,
-        "attract": {
-          "enable": false,
-          "rotateX": 600,
-          "rotateY": 1200
-        }
-      }
+      "number": { "value": 80, "density": { "enable": true, "value_area": 800 } },
+      "color": { "value": "#ffffff" },
+      "shape": { "type": "circle", "stroke": { "width": 0 } },
+      "opacity": { "value": 0.5, "anim": { "enable": false } },
+      "size": { "value": 3, "random": true },
+      "line_linked": { "enable": true, "distance": 150, "color": "#ffffff" },
+      "move": { "enable": true, "speed": 6 }
     },
     "interactivity": {
-      "detect_on": "canvas",
       "events": {
-        "onhover": {
-          "enable": true,
-          "mode": "repulse"
-        },
-        "onclick": {
-          "enable": true,
-          "mode": "push"
-        },
-        "resize": true
-      },
-      "modes": {
-        "grab": {
-          "distance": 400,
-          "line_linked": {
-            "opacity": 1
-          }
-        },
-        "bubble": {
-          "distance": 400,
-          "size": 40,
-          "duration": 2,
-          "opacity": 8,
-          "speed": 3
-        },
-        "repulse": {
-          "distance": 200,
-          "duration": 0.4
-        },
-        "push": {
-          "particles_nb": 4
-        },
-        "remove": {
-          "particles_nb": 2
-        }
+        "onhover": { "enable": true, "mode": "repulse" },
+        "onclick": { "enable": true, "mode": "push" }
       }
     },
     "retina_detect": true
   });
+
+
   particlesJS("particles-js-bottom", {
     "particles": {
-      "number": {
-        "value": 25,
-        "density": {
-          "enable": true,
-          "value_area": 800
-        }
-      },
-      "color": {
-        "value": "#ffffff"
-      },
-      "shape": {
-        "type": "circle",
-        "stroke": {
-          "width": 0,
-          "color": "#000000"
-        },
-        "polygon": {
-          "nb_sides": 5
-        },
-        
-      },
+      "number": { "value": 25, "density": { "enable": true, "value_area": 800 } },
+      "color": { "value": "#ffffff" },
+      "shape": { "type": "circle", "stroke": { "width": 0 } },
     },
-    "interactivity": {
-    }
+    "interactivity": {}
   });
-});
 
-
-document.addEventListener('DOMContentLoaded', () => {
-  document.querySelectorAll('nav a').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-      e.preventDefault();
-      document.querySelector(this.getAttribute('href')).scrollIntoView({
-        behavior: 'smooth'
-      });
-    });
-  });
 
   const albums = document.querySelectorAll('.carousel-item');
   let index = 0;
-  
+
   function displayAlbums() {
-    albums.forEach(album => {
-      album.style.display = 'none'; 
-    });
-    albums[index].style.display = 'block';  
-    index = (index + 1) % albums.length; 
-    setTimeout(displayAlbums, 3000); 
+    albums.forEach(album => album.classList.remove('active'));
+    albums[index].classList.add('active');
+    index = (index + 1) % albums.length;
+    setTimeout(displayAlbums, 3000);
   }
 
-  displayAlbums();  
+  displayAlbums();
+
+  window.showTieSheet = () => window.location.href = "Tie.html";
+  window.showLeague = () => window.location.href = "Final.cpp";
+  window.showMusic = () => window.location.href = "music.html";
+  window.showCV = () => window.location.href = "CV.pdf";
 });
-
-function showTieSheet(){
-  window.location.href = "Tie.html";
-}
-
-function showLeague(){
-  window.location.href = "Final.cpp";
-}
-
-function showMusic(){
-  window.location.href = "music.html";
-}
-
-function showCV(){
-  window.location.href="CV.pdf";
-}
