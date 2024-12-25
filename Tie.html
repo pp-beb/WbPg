@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="Tie.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tie Sheet Maker</title>
+</head>
+<body>
+<div class="inputTerminalOne" id="inputTerminalOne">
+    <div class="PollOneTitle" id="PollOneTitle">Poll One</div>
+    <div class="InputTeamOne" id="InputTeamOne" onclick="InputNmae(this)">Add a team</div>
+    <div class="InputTeamTwo" id="InputTeamTwo" onclick="InputNmae(this)">Add a team</div>
+    <div class="InputTeamThree" id="InputTeamThree" onclick="InputNmae(this)">Add a team</div>
+
+</div>
+<div class="inputTerminalTwo" id="inputTerminalTwo">
+    <div class="PollOneTitle" id="PollTwoTitle" >Poll Two</div>
+    <div class="InputTeamOne" id="InputTeamOneA" onclick="InputNmae(this)">Add a team</div>
+    <div class="InputTeamTwo" id="InputTeamTwoA" onclick="InputNmae(this)">Add a team</div>
+    <div class="InputTeamThree" id="InputTeamThreeA" onclick="InputNmae(this)">Add a team</div>
+
+</div>
+<div class="generateLeague" id="generateLeague" onclick="LeagueDraw()">Generate</div>
+<table class="table1" id="table1">
+    <th>S.N</th>
+    <th>Team</th>
+    <th>P</th>
+    <th>G.D</th>
+    <th>W</th>
+    <th>L</th>
+    <th>D</th>
+    <th>Points</th>
+</tr>
+    <td id="a11">1</td>
+    <td id="a12"></td>
+    <td id="a13"></td>
+    <td id="a14"></td>
+    <td id="a15"></td>
+    <td id="a16"></td>
+    <td id="a17"></td>
+    <td id="a18"></td>
+</tr>
+    
+    <td id="a21">2</td>
+    <td id="a22"></td>
+    <td id="a23"></td>
+    <td id="a24"></td>
+    <td id="a25"></td>
+    <td id="a26"></td>
+    <td id="a27"></td>
+    <td id="a28"></td>
+</tr>
+    
+    <td id="a31">3</td>
+    <td id="a32"></td>
+    <td id="a33"></td>
+    <td id="a34"></td>
+    <td id="a35"></td>
+    <td id="a36"></td>
+    <td id="a37"></td>
+    <td id="a38"></td>
+
+</table>
+<table class="table2" id="table2">
+
+    <th>S.N</th>
+    <th>Team</th>
+    <th>P</th>
+    <th>G.D</th>
+    <th>W</th>
+    <th>L</th>
+    <th>D</th>
+    <th>Points</th>
+</tr>
+    <td id="b11">1</td>
+    <td id="b12"></td>
+    <td id="b13"></td>
+    <td id="b14"></td>
+    <td id="b15"></td>
+    <td id="b16"></td>
+    <td id="b17"></td>
+    <td id="b18"></td>
+</tr>
+    
+    <td id="b21">2</td>
+    <td id="b22"></td>
+    <td id="b23"></td>
+    <td id="b24"></td>
+    <td id="b25"></td>
+    <td id="b26"></td>
+    <td id="b27"></td>
+    <td id="b28"></td>
+</tr>
+    
+    <td id="b31">3</td>
+    <td id="b32"></td>
+    <td id="b33"></td>
+    <td id="b34"></td>
+    <td id="b35"></td>
+    <td id="b36"></td>
+    <td id="b37"></td>
+    <td id="b38"></td>
+
+</table>
+<div class="Poll1cont" id="Poll1cont">
+    <div class="matchesTitle" id="matchesTitle">Poll 1 matches</div>
+    <div class="match1" id="match1">
+        <a id="match1txt"></a>
+        <form id="match1det">
+            <input type="number" name="Agoals" id="Agoals" required>
+            <input type="number" name="Bgoals" id="Bgoals" required>
+            <button type="submit" id="Sub1">.</button>
+        </form>
+    </div>
+    <div class="match2" id="match2">
+        <a id="match2txt"></a>
+        <form id="match2det">
+            <input type="number" name="Agoals1" id="Agoals1" required>
+            <input type="number" name="Bgoals1" id="Bgoals1" required>
+            <button type="submit" id="Sub2">.</button>
+        </form>
+    </div>
+    <div class="match3" id="match3">
+        <a id="match3txt"></a>
+        <form id="match3det">
+            <input type="number" name="Agoals2" id="Agoals2" required>
+            <input type="number" name="Bgoals2" id="Bgoals2" required>
+            <button type="submit" id="Sub3">.</button>
+        </form>
+    </div>
+</div>
+
+<div class="Poll2cont" id="Poll2cont">
+    <div class="matchesTitle2" id="matchesTitle2">Poll 2 matches</div>
+    <div class="match1a" id="match1a">
+        <a id="match1atxt"></a>
+        <form id="match1adet">
+            <input type="number" name="Aagoals" id="Aagoals" required>
+            <input type="number" name="Bagoals" id="Bagoals" required>
+            <button type="submit" id="Sub1a">.</button>
+        </form>
+    </div>
+    <div class="match2a" id="match2a">
+        <a id="match2atxt"></a>
+        <form id="match2adet">
+            <input type="number" name="Aa1goals" id="Aa1goals" required>
+            <input type="number" name="Ba1goals" id="Ba1goals" required>
+            <button type="submit" id="Sub2a">.</button>
+        </form>
+    </div>
+    <div class="match3a" id="match3a">
+        <a id="match3atxt"></a>
+        <form id="match3adet">
+            <input type="number" name="Aa2goals" id="Aa2goals" required>
+            <input type="number" name="Ba2goals" id="Ba2goals" required>
+            <button type="submit" id="Sub3a">.</button>
+        </form>
+    </div>
+</div>
+
+<button class="SemiBtn" id="SemiBtn" onclick="ShowSemi()">SEMI</button>
+<div class="lines" id="lines">
+    <div class="line1" id="line1"></div>
+    <div class="line2" id="line2"></div>
+    <div class="line3" id="line3"></div>
+    <div class="line4" id="line4"></div>
+    <div class="line5" id="line5"></div>
+    <div class="line6" id="line6"></div>
+    <div class="lineF" id="lineF"></div>
+</div>
+    <script src="Tie.js"></script>
+</body>
+</html>

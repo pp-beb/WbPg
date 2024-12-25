@@ -1,0 +1,449 @@
+body,html{
+    background-color:rgb(241, 232, 220) ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.inputTerminalOne{
+    
+    display: flex;
+    justify-content: center;
+    height: 400px;
+    width: 300px;
+    margin: 50px;
+    position: absolute;
+    left: 60px;
+    top: 20px;
+    border-radius: 50px;
+    font-style:italic;
+}
+
+.inputTerminalTwo{
+    display: flex;
+    height: 400px;
+    width: 300px;
+    position: absolute;
+    margin: 50px;
+    right: 60px;
+    top: 20px;
+    font-style:italic;
+}
+
+.PollOneTitle{
+    background-color: rgb(222, 213, 201);
+    border: solid white 1px;
+    position: absolute;
+    top:5%; 
+    margin: 2px;
+    width: 100%;
+    text-align: center;
+    height: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+}
+
+.InputTeamOne{
+    background-color: rgb(222, 213, 201);
+    border: solid white 1px;
+    position: absolute;
+    top:25%; 
+    margin: 2px;
+    width: 100%;
+    text-align: center;
+    height: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.InputTeamOne:hover,
+.InputTeamTwo:hover,
+.InputTeamThree:hover{
+    background-color: rgb(236, 228, 217);
+    box-shadow: 5px 5px 0px rgb(239, 221, 196);;
+}
+
+.InputTeamTwo{
+    background-color: rgb(222, 213, 201);
+    border: solid white 1px;
+    position: absolute;
+    top: 50%; 
+    margin: 2px;
+    width: 100%;
+    text-align: center;
+    height: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.InputTeamThree{
+    background-color: rgb(222, 213, 201);
+    border: solid white 1px;
+    position: absolute;
+    top:75%; 
+    margin: 2px;
+    width: 100%;
+    text-align: center;
+    height: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.generateLeague{
+    border-radius: 10px;
+    width:150px ;
+    height:30px ;
+    background-color: rgb(236, 200, 155);
+    position: absolute;
+    top: 90%;
+    cursor: pointer;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.generateLeague:hover{
+    background-color:rgb(238, 215, 188) ;
+    box-shadow: 5px 5px 0px rgb(190, 219, 245);
+}
+
+th, td{
+    border: 1px solid black;
+    height: 20px;
+    text-align: center;
+    }
+
+.table1{
+    visibility: hidden;
+    width: 300px;
+    margin: 50px;
+    position: absolute;
+    left: 60px;
+    top: 54%;
+    border-radius: 50px;
+    font-style:italic;
+    }
+
+.table2{
+    visibility: hidden;
+    width: 300px;
+    position: absolute;
+    margin: 50px;
+    right: 60px;
+    top: 54%;
+    font-style:italic;
+    border-radius: 50px;
+}
+
+.Poll1cont{
+    visibility: hidden;
+    font-style: italic;
+    border-radius: 40px;
+    height: 300px;
+    display: flex;
+    width: 400px;
+    position: absolute;
+    top: 10%;
+    left: 60px;
+    align-items: center;
+    justify-content: center;
+}
+
+.Poll2cont{
+    visibility: hidden;
+    font-style: italic;
+    border-radius: 40px;
+    height: 300px;
+    display: flex;
+    width: 400px;
+    position: absolute;
+    top: 10%;
+    right: 60px;
+    align-items: center;
+    justify-content: center;
+}
+
+.matchesTitle{
+
+    height: 75px;
+    width: 500px;
+    position: absolute;
+    top: 0%;
+    text-align: center;
+}
+.match1{
+    height: 75px;
+    width: 500px;
+    position: absolute;
+    top: 25%;
+    text-align: center;
+    cursor: pointer;
+}
+.match2{
+    height: 75px;
+    width: 500px;
+    position: absolute;
+    top: 50%;
+    text-align: center;
+    cursor: pointer;
+}
+.match3{
+    height: 75px;
+    width: 500px;
+    position: absolute;
+    top: 75%;
+    text-align: center;
+    cursor: pointer;
+}
+
+.matchesTitle2{
+
+    height: 75px;
+    width: 500px;
+    position: absolute;
+    top: 0%;
+    text-align: center;
+}
+.match1a{
+    height: 75px;
+    width: 500px;
+    position: absolute;
+    top: 25%;
+    text-align: center;
+    cursor: pointer;
+}
+.match2a{
+    height: 75px;
+    width: 500px;
+    position: absolute;
+    top: 50%;
+    text-align: center;
+    cursor: pointer;
+}
+.match3a{
+    height: 75px;
+    width: 500px;
+    position: absolute;
+    top: 75%;
+    text-align: center;
+    cursor: pointer;
+}
+
+#match1det{
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#Agoals{
+    width: 40px;
+    margin-right: 25px;
+}
+
+#Bgoals{
+    width: 40px;
+    margin-left: 25px;
+}
+
+#Sub1{
+position: absolute;
+top: 30px;
+
+}
+
+#match2det{
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#Agoals1{
+    width: 40px;
+    margin-right: 25px;
+}
+
+#Bgoals1{
+    width: 40px;
+    margin-left: 25px;
+}
+
+#Sub2{
+position: absolute;
+top: 30px;
+}
+
+#match3det{
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#Agoals2{
+    width: 40px;
+    margin-right: 25px;
+}
+
+#Bgoals2{
+    width: 40px;
+    margin-left: 25px;
+}
+
+#Sub3{
+position: absolute;
+top: 30px;
+}
+
+#match1adet{
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#Aagoals{
+    width: 40px;
+    margin-right: 25px;
+}
+
+#Bagoals{
+    width: 40px;
+    margin-left: 25px;
+}
+
+#Sub1a{
+position: absolute;
+top: 30px;
+}
+
+#match2adet{
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#Aa1goals{
+    width: 40px;
+    margin-right: 25px;
+}
+
+#Ba1goals{
+    width: 40px;
+    margin-left: 25px;
+}
+
+#Sub2a{
+position: absolute;
+top: 30px;
+}
+
+#match3adet{
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#Aa2goals{
+    width: 40px;
+    margin-right: 25px;
+}
+
+#Ba2goals{
+    width: 40px;
+    margin-left: 25px;
+}
+
+#Sub3a{
+position: absolute;
+top: 30px;
+}
+
+.SemiBtn{
+    visibility: hidden;
+    position: absolute;
+    top: 42%;
+    width: 50px;
+    height: 50px;
+    font-style: italic;
+}
+
+.line1{
+    width: 150px;
+    height: 2px;
+    background-color: black;
+    position: relative;
+    top: 215px;
+    left: 150px;
+}
+
+.line2{
+    width: 150px;
+    height: 2px;
+    background-color: black;
+    position: relative;
+    top: 215px;
+    right: 150px;
+}
+
+.line3{
+    width: 150px;
+    height: 2px;
+    background-color: black;
+    position: relative;
+    top: 415px;
+    left: 150px;
+}
+
+.line4{
+    width: 150px;
+    height: 2px;
+    background-color: black;
+    position: relative;
+    top: 415px;
+    right: 150px;
+}
+
+.line5{
+    height: 205px;
+    width: 2px;
+    background-color: black;
+    position: relative;
+    top: 210px;
+}
+
+.line6{
+    height: 205px;
+    width: 2px;
+    background-color: black;
+    position: relative;
+    left: 150px;
+    top: 4px;
+}
+
+.lineF{
+    width: 150px;
+    height: 2px;
+    background-color: black;
+    position: relative;
+    bottom: 100px;
+}
+
+.line1, .line2, .line3, .line4, .line5, .line6, .lineF{
+    visibility: hidden;
+}

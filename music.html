@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="music.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+</head>
+<body>
+    <div class="playingDiv" id="playingDiv">
+        <h3>Playing now</h3>
+        <a class="premium" id="premium">Buy our Premium plan to enable audio controls</a>
+        <div class="songPicB" id="songPicB"> 
+         <img src="song1.jpg" class="songB oneB" id="songB oneB"> 
+         <img src="song2.jpg" class="songB twoB" id="songB twoB"> 
+         <img src="song3.jpg" class="songB threeB" id="songB threeB"> 
+         <img src="song4.jpg" class="songB fourB" id="songB fourB"> </div>
+        <div class="back" id="back"><a>&#8592;</a></div>
+        <div class="threeBars" id="threeBars" onclick="Settings()"><a>&#9776;</a></div>
+        <h4 class="title" id="title">Do I wanna know</h4>
+        <h5 class="artist" id="artist">Arctic Monkeys</h5>
+        <audio class="audio1" id="audio1" controls>
+            <source src="DoI.weba" type="audio/ogg">
+            Your browser does not support the audio element.
+        </audio>
+        <audio class="audio2" id="audio2" controls>
+            <source src="Ode.weba" type="audio/ogg">
+            Your browser does not support the audio element.
+        </audio>
+        <audio class="audio3" id="audio3" controls>
+            <source src="Jap.weba" type="audio/ogg">
+            Your browser does not support the audio element.
+        </audio>
+        <audio class="audio4" id="audio4" controls>
+            <source src="Hig.weba" type="audio/ogg">
+            Your browser does not support the audio element.
+        </audio>
+    </div>
+
+
+    <div class="listDiv" id="listDiv">
+        <h3>Music</h3>
+        <div class="full" id="full" onclick="fullList()"><a>&#x2921;</a></div>
+        <div class="songPic" id="songPic"> 
+            <img src="song1.jpg" class="song one" id="song one">
+            <img src="song2.jpg" class="song two" id="song two">
+            <img src="song3.jpg" class="song three" id="song three">
+            <img src="song4.jpg" class="song four" id="song four">
+         </div>
+        <div class="fav" id="fav" onclick="favouritees()"><a>&#x2665;</a></div>
+        <div class="threeDots" id="threeDots" onclick="options()"><a>&hellip;</a></div>
+        <div class="downList" id="downList">
+            <div class="song1name" id="song1name" onclick="PicDoI()">
+                <h4>Do I wanna know</h4>
+                <h5>Arctic Monkeys</h5>
+                <div class="playbtn" id="playbtn"> <a class="play1" id="play1"> ▶ </a></div>
+            </div>
+            <div class="song2name" id="song2name" onclick="PicODE()">
+                <h4>Ode To The Mets</h4>
+                <h5>The Strokes</h5>
+                <div class="playbtn" id="playbtn"> <a class="play2" id="play2">▶ </a></div>
+            </div>
+            <div class="song3name" id="song3name" onclick="PicJap()">
+                <h4>Japanese Denim</h4>
+                <h5>Daniel Caesar</h5>
+                <div class="playbtn" id="playbtn"> <a class="play3" id="play3">▶ </a></div>
+            </div>
+            <div class="song4name" id="song4name" onclick="PicHig()">
+                <h4>High And Dry</h4>
+                <h5>Radiohead</h5>
+                <div class="playbtn" id="playbtn"> <a class="play4" id="play4">▶ </a></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="favDiv" id="favDiv">
+        <h3>Favourites</h3>
+        <div class="favLater" id="favLater"><a>&#x2665;</a></div>
+        <div class="favBack" id="favBack" onclick="hideFavDiv()"><a>&#8592;</div>
+        <h4>You have no Favourites</h4>
+
+    </div>
+
+    <div class="threeDotsDiv" id="threeDotsDiv">
+        <h3>Options</h3>
+        <div class="dotsLater" id="dotsLater"><a>&hellip;</a></div>
+        <div class="dotsBack" id="dotsBack" onclick="hideDotsDiv()"><a>&#8592;</div>
+        <h4>No options added so far</h4>
+
+    </div>
+
+    <div class="SettingsDiv" id="SettingsDiv">
+        <h3>Settings</h3>
+        <div class="SetsLater" id="SetsLater"><a>&#9776;</a></div>
+        <div class="SetsBack" id="SetsBack" onclick="hideSetsDiv()"><a>&#8592;</div>
+        <h4>Working in it</h4>
+
+    </div>
+
+
+    <div class="listDivBig" id="listDivBig">
+        <h3>Music</h3>
+        <div class="songPicBig" id="songPicBig"> 
+            <img src="song1.jpg" class="songBig one" id="songBig">
+            <img src="song2.jpg" class="songBig two" id="songBig">
+            <img src="song3.jpg" class="songBig three" id="songBig">
+            <img src="song4.jpg" class="songBig four" id="songBig">
+         </div>
+        <div class="listBigBack" id="listBigBack" onclick="closeListBig()"><a>&#8592;</a></div>
+        <div class="downList" id="downList">
+            <div class="song1name" id="song1name" onclick="PicDoI()">
+                <h4>Do I wanna know</h4>
+                <h5>Arctic Monkeys</h5>
+                <div class="playbtn" id="playbtn"> <a class="play1" id="play1a"> ▶ </a></div>
+            </div>
+            <div class="song2name" id="song2name" onclick="PicODE()">
+                <h4>Ode To The Mets</h4>
+                <h5>The Strokes</h5>
+                <div class="playbtn" id="playbtn"> <a class="play2" id="play2a">▶ </a></div>
+            </div>
+            <div class="song3name" id="song3name" onclick="PicJap()">
+                <h4>Japanese denim</h4>
+                <h5>Daniel Caesar</h5>
+                <div class="playbtn" id="playbtn"> <a class="play3" id="play3a">▶ </a></div>
+            </div>
+            <div class="song4name" id="song4name" onclick="PicHig()">
+                <h4>High and Dry</h4>
+                <h5>Radiohead</h5>
+                <div class="playbtn" id="playbtn"> <a class="play4" id="play4a">▶ </a></div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="music.js"></script>
+</body>
+</html>
