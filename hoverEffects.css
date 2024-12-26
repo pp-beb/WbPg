@@ -1,0 +1,81 @@
+h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: dimgray;
+    font-style: italic;
+    cursor: pointer;
+}
+.btn{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left:40%;
+    background-color: brown;
+    margin: 75px;
+    width: 70px;
+    height: 50px;
+    color: aliceblue;
+    font-style: italic;
+    border-radius: 20px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.one{
+    box-shadow: 0px 0px 0px red;
+}
+
+.one:hover{
+    box-shadow: 5px 5px 0px red;
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+    color: brown;
+}
+
+.two:hover{
+border: solid black 1px;
+box-shadow: 5px 5px 0px brown;
+background-color: aliceblue;
+color: red;
+}
+
+.three:hover{
+    border: solid black 1px;
+    background:transparent;
+    color: white;
+    margin-top: 5px;
+    
+}
+
+.three::after{
+    content: ' ';
+    width: 100%;
+    height: 100%;
+    border: solid black 1px; 
+    position: absolute;
+    top:0;
+    left: 0;
+    box-sizing: border-box;
+    border-radius: 20px;
+    transition: top 0.5s, left 0.5s ;
+}
+
+.three:hover::after{
+    top: 5px;
+    left: 5px;
+    box-sizing: content-box;
+}
+
+
+.four:hover{
+   background-color: white;
+   cursor: crosshair;
+}
+
+.four:hover::after{
+    cursor: pointer;
+}
