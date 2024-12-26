@@ -36,9 +36,8 @@ h1 {
 }
 
 .project img {
-  width: 100%;
-  max-width: 150px;
-  height: auto;
+  width: 150px;
+  height: 80px;
   border-radius: 15px;
   margin: 10px 0;
 }
