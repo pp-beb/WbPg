@@ -138,3 +138,9 @@ body {
 .Arrow{
   color: white;
 }
+
+.social-links img{
+width: 30px;
+height: 30px;
+border-radius: 50%;
+}
