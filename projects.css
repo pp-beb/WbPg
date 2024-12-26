@@ -36,8 +36,9 @@ h1 {
 }
 
 .project img {
-  width: 150px;
-  height: 80px;
+  width: 100%;
+  max-width: 150px;
+  height: auto;
   border-radius: 15px;
   margin: 10px 0;
 }
@@ -52,8 +53,6 @@ h1 {
   font-size: 1rem;
   transition: transform 0.3s, box-shadow 0.3s;
   margin-top: 10px;
-  position: relative;
-  left: 30px;
 }
 
 .cool-button:hover {
