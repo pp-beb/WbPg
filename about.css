@@ -1,0 +1,33 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #333;
+    color: #FFC300;
+    font-family: cursive;
+    text-align: center;
+  }
+  
+  h1 {
+    margin: 20px 0;
+  }
+  
+  .HomeIcon {
+    position: fixed;
+    left: 20px;
+    top: 20px;
+    font-size: xx-large;
+  }
+  
+  .HomeIcon a {
+    color: white;
+    text-decoration: none;
+  }
+  
+
+
+  
+
+  
+
+
+  
