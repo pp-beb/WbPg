@@ -48,12 +48,36 @@ h1 {
   margin: 5px;
 }
 
+.SportsInfo {
+  margin-top: 6%;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: auto;
+}
+
+.SportsInfoTxt {
+  flex: 2;
+  text-align: center;
+  font-style: italic;
+  margin: 5px;
+  color: #666;
+}
+
+.SportsInfoImg {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-style: italic;
+  margin: 5px;
+}
+
 .MeImg {
   width: 80%;
   border-radius: 20%;
 }
 
-/* Responsive for smaller screens */
 @media (max-width: 768px) {
   .BasicInfo {
     flex-direction: column;
@@ -69,4 +93,43 @@ h1 {
     width: 100%;
     max-width: 300px;
   }
+
+  .SportsInfo {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .SportsInfoImg, .SportsInfoTxt {
+    flex: 1;
+    width: 90%;
+  }
+
+  .MeImg {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .conclusion{
+    color:bisque;
+    font-style: cursive;
+  }
+}
+
+.MeImg2 {
+  width: 100%;
+  max-width:500px;
+  margin-top: 4%;
+  margin-bottom: 3%;
+}
+
+
+.firstLine, .secLine{
+  background-color: white;
+  height: 1px;
+  width: 100%;
+}
+
+.conclusion{
+  color:bisque;
+  font-style: cursive;
 }
