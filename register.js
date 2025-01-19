@@ -19,6 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
             console.log(password);
 
             form.submit(); 
+            alert(`Hi ${name}, your form has been submitted. I will get back to you in some time.`)
         } else {
             alert('Please fill out all fields.');
         }
