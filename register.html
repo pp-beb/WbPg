@@ -10,7 +10,26 @@
     <h1>Register</h1>
     <h2 class="HomeIcon" id="HomeIcon"><a href="index.html">&#8962;</a></h2>
     <div class="RegDiv" id="RegDiv">
-        <div class="RegBox" id="RegBox">Hello!</div>
+        <div class="RegBox" id="RegBox">
+            <form id="InputForm">
+                Name:<br/>
+                <input type="text" id="name" name="name" required>
+                <br/><br/>
+                Number:<br/>
+                <input type="number" id="number" name="number">
+                <br/><br/>
+                Email:<br/>
+                <input type="text" id="email" name="email" required>
+                <br/><br/>
+                Username:<br/>
+                <input type="text" id="username" name="username" required>
+                <br/><br/>
+                Password:<br/>
+                <input type="text" id="password" name="password" required>
+            </form>
+            <br/><br/><br/>
+            <button class="cool-button" id="submitBtn">Submit</button>
+        </div>
     </div>
     <script src="register.js"></script>
 </body>

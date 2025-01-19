@@ -31,8 +31,33 @@ body {
   }
   
   .RegBox{
+    background-color: #555;
     color: #fff;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    border-radius: 4%;
   }
+
+  .cool-button {
+    background: linear-gradient(to right, #ff5f6d, #ffc371);
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: transform 0.3s, box-shadow 0.3s;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .cool-button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  }
+  
 
   
 
