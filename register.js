@@ -25,3 +25,24 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 });
+
+let original="";
+
+
+function eye() {
+    const passwordField = document.getElementById('password');
+    let password = passwordField.value; 
+    original = password;
+    let hidden = ""; 
+
+    for (let i = 0; i < password.length; i++) {
+        hidden += "."; 
+    }
+    document.getElementById('password').value=hidden;
+}
+
+function eye2() {
+
+    const passwordField = document.getElementById('password');
+    document.getElementById('password').value=original;
+}
