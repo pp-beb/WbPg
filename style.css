@@ -156,3 +156,25 @@ border-radius: 50%;
   color: white;
   text-decoration: none;
 }
+
+.HomeIcon:hover{
+  text-shadow: white 2px 2px 0px;
+  transition: 0.5s;
+}
+
+.registerIcon {
+  position: fixed;
+  right: 20px;
+  top: 20px;
+  font-size: x-large;
+}
+
+.registerIcon:hover{
+  text-shadow: white 2px 2px 0px;
+  transition: 0.5s;
+}
+
+.registerIcon a {
+  color: white;
+  text-decoration: none;
+}
