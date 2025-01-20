@@ -65,4 +65,13 @@ document.addEventListener('DOMContentLoaded', () => {
 function removeCover() {
   document.getElementById('body').style.visibility="visible";
   document.getElementById('cover').style.visibility="hidden";
+  document.getElementById('backIcon').style.visibility="visible";
+}
+
+function gotoCover(){
+  document.getElementById('body').style.visibility="hidden";
+  document.getElementById('cover').style.visibility="visible";
+  document.getElementById('HomeIcon').style.visibility="visible";
+  document.getElementById('registerIcon').style.visibility="visible";
+  document.getElementById('backIcon').style.visibility="hidden";
 }

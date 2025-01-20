@@ -202,6 +202,10 @@ body {
   #cover{
     top: 40%;
   }
+
+  #navbar {
+    visibility: hidden;
+  }
 }
 
 @media (max-width: 480px) {
@@ -229,6 +233,17 @@ body {
   #cover{
     top: 40%;
   }
+
+  #navbar {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .navItems {
+    display: flex;
+  }
+  .navItems li {
+    margin: 0 10px; /* Adjust spacing for smaller screens */
+  }
 }
 
 .Arrow{
@@ -243,8 +258,8 @@ border-radius: 50%;
 
 .HomeIcon {
   position: fixed;
-  left: 20px;
-  top: 20px;
+  right: 2%;
+  top: 4%;
   font-size: xx-large;
   visibility: visible;
 }
@@ -261,9 +276,10 @@ border-radius: 50%;
 
 .registerIcon {
   position: fixed;
-  right: 20px;
-  top: 20px;
-  font-size: x-large;visibility: visible;
+  right: 2%;
+  bottom: 5%;
+  font-size: x-large;
+  visibility: visible;
 }
 
 .registerIcon:hover{
@@ -273,5 +289,41 @@ border-radius: 50%;
 
 .registerIcon a {
   color: white;
+  text-decoration: none;
+}
+
+.backIcon {
+  visibility: hidden;
+  position: fixed;
+  left: 2%;
+  top: 6%;
+  font-size: x-large;
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.backIcon:hover{
+  text-shadow: white 2px 2px 0px;
+  transition: 0.5s;
+}
+
+#navbar {
+  display: flex; 
+  justify-content: center; 
+}
+
+.navItems {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex; 
+}
+
+.navItems li {
+  margin: 0 15px; 
+}
+
+.navItems a {
   text-decoration: none;
 }
