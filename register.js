@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 user_number: number,
                 user_username: username,
                 user_password: password
-            }, "UdffUb45DNOCK8drw")
+            }, "SE330SPWWvYQrQvOk")  
             .then((response) => {
                 alert(`Hi ${name}, your data has been submitted successfully.`);
             }, (error) => {
