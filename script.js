@@ -66,6 +66,10 @@ function removeCover() {
   document.getElementById('body').style.visibility="visible";
   document.getElementById('cover').style.visibility="hidden";
   document.getElementById('backIcon').style.visibility="visible";
+  document.getElementById('cool-button-cover').style.visibility="hidden";
+  document.getElementById('particles-js').style.zIndex="-1";
+  document.getElementById('particles-js-bottom').style.zIndex="-1";
+  
 }
 
 function gotoCover(){
@@ -74,4 +78,7 @@ function gotoCover(){
   document.getElementById('HomeIcon').style.visibility="visible";
   document.getElementById('registerIcon').style.visibility="visible";
   document.getElementById('backIcon').style.visibility="hidden";
+  document.getElementById('cool-button-cover').style.visibility="visible";
+  document.getElementById('particles-js').style.zIndex="3";
+  document.getElementById('particles-js-bottom').style.zIndex="3";
 }
