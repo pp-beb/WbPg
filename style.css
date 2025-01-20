@@ -242,12 +242,14 @@ body {
     display: flex;
   }
   .navItems li {
-    margin: 0 10px; /* Adjust spacing for smaller screens */
+    margin: 0 10px; /
   }
 }
 
 .Arrow{
   color: white;
+  font-family:'Courier New', Courier, monospace;
+  font-size: x-large;
 }
 
 .social-links img{

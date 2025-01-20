@@ -13,14 +13,36 @@ h1 {
 
 .HomeIcon {
   position: fixed;
-  left: 20px;
-  top: 20px;
-  font-size: xx-large;
+  right: 2%;
+  top: 5%;
+  font-size: x-large;
+  color: white;
+  cursor: pointer;
+}
+
+.HomeIcon:hover{
+  text-shadow: white 2px 2px 0px;
+  transition: 0.5s;
 }
 
 .HomeIcon a {
   color: white;
   text-decoration: none;
+}
+
+.backIcon {
+  position: fixed;
+  left: 2%;
+  top: 6%;
+  font-size: x-large;
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.backIcon:hover{
+  text-shadow: white 2px 2px 0px;
+  transition: 0.5s;
 }
 
 .BasicInfo {

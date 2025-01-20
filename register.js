@@ -57,3 +57,8 @@ function eye2() {
     const passwordField = document.getElementById('password');
     document.getElementById('password').value = original;
 }
+
+window.gotoCover = () => window.location.href = "index.html";
+function gotoContent(){
+    window.location.href = "index.html";
+}
