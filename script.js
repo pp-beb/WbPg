@@ -61,3 +61,8 @@ document.addEventListener('DOMContentLoaded', () => {
   window.showCCT = () => window.open("CCT.pdf", "_blank");
   
 });
+
+function removeCover() {
+  document.getElementById('body').style.visibility="visible";
+  document.getElementById('cover').style.visibility="hidden";
+}
