@@ -189,6 +189,7 @@ body {
 
   #cover{
     font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
   }
 
   .h3cover{
@@ -199,6 +200,34 @@ body {
     top: 40%;
   }
 }
+
+@media (max-width: 480px) {
+  .header nav ul {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .carousel {
+    flex-direction: column;
+  }
+
+  .ticket1, .ticket2, .ticket3 {
+    width: 90%;
+  }
+
+  #cover{
+    font-size: 1rem;
+  }
+
+  .h3cover{
+    top: 60%;
+  }
+
+  #cover{
+    top: 40%;
+  }
+}
+
 .Arrow{
   color: white;
 }
