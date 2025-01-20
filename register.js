@@ -12,27 +12,19 @@ document.addEventListener('DOMContentLoaded', () => {
         const password = document.getElementById('password').value;
 
         if (name && number && email && username && password) {
-            fetch('http://localhost:3000/addUser', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-                body: JSON.stringify({
-                    name: name,
-                    number: number,
-                    email: email,
-                    username: username,
-                    password: password
-                }),
-            })
-                .then((response) => response.text())
-                .then((data) => {
-                    alert(`Hi ${name}, your data has been submitted. ${data}`);
-                })
-                .catch((error) => {
-                    console.error('Error:', error);
-                    alert('There was an error submitting your form. Please try again.');
-                });
+            emailjs.send("service_slo1won", "template_ufox9ma", {
+                from_name: name,
+                from_email: email,
+                user_number: number,
+                user_username: username,
+                user_password: password
+            }, "UdffUb45DNOCK8drw")
+            .then((response) => {
+                alert(`Hi ${name}, your data has been submitted successfully.`);
+            }, (error) => {
+                console.error('Error:', error);
+                alert('There was an error submitting your form. Please try again.');
+            });
         } else {
             alert('Please fill out all fields.');
         }
@@ -59,6 +51,6 @@ function eye2() {
 }
 
 window.gotoCover = () => window.location.href = "index.html";
-function gotoContent(){
+function gotoContent() {
     window.location.href = "index.html";
 }

@@ -9,7 +9,7 @@
 <body>
     <h1>Register</h1>
     <h2 class="backIcon" id="backIcon" onclick="gotoCover()">&#8592;</h2>
-  <h2 class="HomeIcon" id="HomeIcon" onclick="gotoContent()">&#8962;</h2>
+    <h2 class="HomeIcon" id="HomeIcon" onclick="gotoContent()">&#8962;</h2>
     <div class="RegDiv" id="RegDiv">
         <div class="RegBox" id="RegBox">
             <form id="InputForm">
@@ -26,12 +26,13 @@
                 <input type="text" id="username" name="username" required>
                 <br/><br/>
                 Password: <span class="eye" id="eye" onmouseover="eye()" onmouseout="eye2()" >&#128065;</span><br/>
-                <input type="text" id="password" name="password"> 
+                <input type="password" id="password" name="password"> 
             </form>
             <br/><br/><br/>
             <button class="cool-button" id="submitBtn">Submit</button>
         </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2.6.4/dist/email.min.js"></script>
     <script src="register.js"></script>
 </body>
 </html>
