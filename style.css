@@ -7,6 +7,12 @@ body {
   color: #fff;
   transition: background 0.3s, color 0.3s;
   overflow-x: hidden;
+  margin-top: 5%;
+}
+
+html {
+  scroll-padding-top: 80px;
+  scroll-behavior: smooth;
 }
 
 #particles-js, #particles-js-bottom {
@@ -75,9 +81,16 @@ body {
   color: #fff;
   padding: 1rem;
   text-align: center;
-  position: relative;
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 1200px;
   z-index: 1;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
 }
+
 
 .header h1 {
   margin: 0;
@@ -147,7 +160,7 @@ body {
   font-size: 1rem;
   transition: transform 0.3s, box-shadow 0.3s;
   position: relative;
-  z-index: 1;
+  z-index: 0.5;
 }
 
 .cool-button:hover {
@@ -205,6 +218,14 @@ body {
 
   #navbar {
     visibility: hidden;
+  }
+
+  .header .icons {
+    order: -1; 
+  }
+
+  .header{
+    height: 4%;
   }
 }
 
@@ -264,6 +285,7 @@ border-radius: 50%;
   top: 4%;
   font-size: xx-large;
   visibility: visible;
+  z-index: 2;
 }
 
 .HomeIcon a {
@@ -282,6 +304,7 @@ border-radius: 50%;
   bottom: 5%;
   font-size: x-large;
   visibility: visible;
+  z-index: 2;
 }
 
 .registerIcon:hover{
@@ -303,6 +326,7 @@ border-radius: 50%;
   color: white;
   text-decoration: none;
   cursor: pointer;
+  z-index: 2;
 }
 
 .backIcon:hover{
