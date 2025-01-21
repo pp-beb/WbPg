@@ -113,8 +113,9 @@ body {
 .tools span:hover {
   transform: scale(1.2);
 }
-#git, #github, #latex, #notebook, #vsc, #My-SQL {
+#git, #github, #latex, #notebook, #vsc, #My-SQL, #linkedin {
   font-size: 2rem;
+  color:#f0efef;
 }
 .skills span{
   margin: 1%;
