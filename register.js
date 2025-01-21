@@ -9,6 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const password = document.getElementById('password').value;
 
         if (name && number && email && username && password) {
+            // Let the form submit normally (no preventDefault)
             document.getElementById('InputForm').submit();
             alert(`Hi ${name}, your data has been submitted successfully.`);
         } else {
