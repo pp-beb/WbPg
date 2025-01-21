@@ -286,12 +286,10 @@ border-radius: 50%;
   font-size: xx-large;
   visibility: visible;
   z-index: 5;
+  color: white;
+  cursor: pointer;
 }
 
-.HomeIcon a {
-  color: white;
-  text-decoration: none;
-}
 
 .HomeIcon:hover{
   text-shadow: white 2px 2px 0px;
