@@ -34,7 +34,7 @@ body {
   .backIcon {
     position: fixed;
     left: 2%;
-    top: 6%;
+    top: 5%;
     font-size: x-large;
     color: white;
     text-decoration: none;
@@ -47,10 +47,40 @@ body {
     transition: 0.5s;
   }
   
+  .docs{
+    margin-top: 5%;
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    height: 30%;
+  }
 
+  .cv, .cct{
+    width: 30%;
+    aspect-ratio: 1/1;
+    text-align: center;
+    border: solid white 2px;
+    border-radius:30%;
+    color: #666;
+  }
 
+  .cct img, .cv img{
+    max-width:75%;
+    border-radius: 30%;
+    cursor: pointer;
+  }
+
+  .cct img:hover, .cv img:hover{
+    max-width:80%;
+    transition: 0.5s;
+  }
   
-
+.skills{
+  color:#f6d464;
+  display: flex;
+  align-items:center ;
+  justify-content: space-around;
+}
   
 
 
