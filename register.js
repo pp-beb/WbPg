@@ -12,39 +12,27 @@ document.addEventListener('DOMContentLoaded', () => {
         const password = document.getElementById('password').value;
 
         if (name && number && email && username && password) {
-            emailjs.send("service_slo1won", "template_ufox9ma", {
-                from_name: name,
-                from_email: email,
-                user_number: number,
-                user_username: username,
-                user_password: password
-            }, "SE330SPWWvYQrQvOk")  
-            .then((response) => {
-                alert(`Hi ${name}, your data has been submitted successfully.`);
-            }, (error) => {
-                console.error('Error:', error);
-                alert('There was an error submitting your form. Please try again.');
-            });
+            form.submit(); 
+            alert(`Hi ${name}, your data has been submitted successfully.`);
         } else {
             alert('Please fill out all fields.');
         }
     });
 });
 
-let original = "";
-
 function eye() {
     const passwordField = document.getElementById('password');
     const password = passwordField.value;
-   if(passwordField.type==="password"){
-    passwordField.type="text";
-   }
-   else{
-    passwordField.type="password";
-   }
+    
+    if (passwordField.type === "password") {
+        passwordField.type = "text";
+    } else {
+        passwordField.type = "password";
+    }
 }
 
 window.gotoCover = () => window.location.href = "index.html";
+
 function gotoContent() {
     window.location.href = "index.html";
 }
