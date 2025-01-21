@@ -59,9 +59,10 @@ body {
     width: 30%;
     aspect-ratio: 1/1;
     text-align: center;
-    border: solid white 2px;
+    border: solid #444 2px;
     border-radius:30%;
     color: #666;
+    box-shadow: #555 0 0 0 2px;
   }
 
   .cct img, .cv img{
@@ -81,7 +82,47 @@ body {
   align-items:center ;
   justify-content: space-around;
 }
-  
 
+#react, #cpp, #html, #css, #js, #c{
+    font-size: 2rem;
+    color: #f0efef;
+}
+
+.skillsTxt{
+  text-align: start;
+  color: #999;
+}
+
+.toolsTxt{
+  text-align: start;
+  color: #999;
+}
+
+.tools {
+  color:#f0efef;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 2%;
+  flex-wrap: wrap;
+}
+.tools span {
+  margin: 1%;
+  transition: transform 0.3s ease;
+}
+.tools span:hover {
+  transform: scale(1.2);
+}
+#git, #github, #latex, #notebook, #vsc, #My-SQL {
+  font-size: 2rem;
+}
+.skills span{
+  margin: 1%;
+  transition: transform 0.3s ease;
+}
+
+.skills span:hover{
+  transform: scale(1.2);
+}
 
   

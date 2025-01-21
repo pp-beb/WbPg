@@ -2,6 +2,8 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" href="portfolio.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/devicon/2.15.1/devicon.min.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
@@ -13,24 +15,60 @@
     <div class="docs" id="docs">
         <div class="cv" id="cv">
             CV<br><br/>
-            <img src="CV1.png" onclick="showCV()">
+            <img src="CV1.jpg" onclick="showCV()">
         </div>
         <div class="cct" id="cct" onclick="showCCT()">
             CCT<br><br/>
-            <img src="CCT1.png">
+            <img src="CCT1.jpg">
         </div>
     </div>
     
         <h2 style="color:#f6d464;;">Skills</h2>
     <div class="skills" id="skills">
-        <span>React</span>
-        <span>CPP(C+)</span>
-        <span>HTML</span>
-        <span>CSS</span>
-        <span>JS</span>
-        <span>C</span>
-
+        <span id="react"><i class="fa-brands fa-react"></i></span>
+        <span id="cpp"><i class="fa-solid fa-c"></i><sup>++</sup></i></span>
+        <span id="html"><i class="fa-brands fa-html5"></i></span>
+        <span id="css"><i class="fa-brands fa-css3-alt"></i></span>
+        <span id="js"><i class="fa-brands fa-js"></i></span>
+        <span id="c"><i class="fa-solid fa-c"></i></span>
     </div>
+    <ul class="skillsTxt">
+        <li><h3>C Programming:</h3>
+        <h4>Proficient in C programming, with strong understanding of memory management, data structures, and system-level programming.</h4>
+        </li>
+        <li><h3>C++ Programming:</h3>
+        <h4>Skilled in C++ with expertise in object-oriented programming, STL, and competitive programming concepts.</h4>
+        </li>
+        <li><h3>HTML:</h3>
+             <h4>Experienced in creating structured and semantic web pages using modern HTML standards.</h4> 
+            </li>
+        <li><h3>React:</h3> 
+            <h4>Have a working knowledge of React, focusing on components, state management, and hooks, with room for improvement.</h4> 
+        </li>
+        <li><h3>JavaScript:</h3>
+        <h4> Skilled in JavaScript, focusing on DOM manipulation, event handling, and modern ES6+ features.</h4>
+        </li>
+        <li><h3>CSS:</h3>
+            <h4>Proficient in styling web pages with CSS, including responsive design, flexbox, and grid layouts.</h4> 
+           </li>
+      </ul>
+      <h2 style="color:#f6d464;;">Tools</h2>
+      <div class="tools" id="tools">
+        <span id="git"><i class="fa-brands fa-git"></i></span>
+        <span id="github"><i class="fa-brands fa-github"></i></span>
+        <span id="latex"><i class="devicon-latex-original"></i></span>
+        <span id="notebook"><i class="devicon-jupyter-plain"></i></span>
+        <span id="vsc"><i class="devicon-vscode-plain"></i></span>
+        <span id="My-SQL"><i class="fas fa-database"></i></span>
+    </div>
+    <ul class="toolsTxt">
+        <li><h3>VScode:</h3><h4>Proficient in using Visual Studio Code for efficient coding with extensions and integrated Git support.</h4></li>
+        <li><h3>Github:</h3><h4>Experienced with GitHub for version control, collaborative coding, and managing repositories.</h4></li>
+        <li><h3>Git:</h3><h4>Skilled in using Git for version control, branching, and managing code changes across multiple versions.</h4></li>
+        <li><h3>My-SQL:</h3><h4>Proficient in MySQL for designing and managing relational databases and executing SQL queries.</h4></li>
+        <li><h3>Jupyter Notebook:</h3><h4>Experienced with Jupyter Notebook for running Python code, data analysis, and visualizations.</h4></li>
+        <li><h3>LaTeX:</h3><h4>Skilled in LaTeX for writing professional-quality technical and scientific documents with complex formatting.</h4></li>
+    </ul>    
     <script src="portfolio.js"></script>
 </body>
 </html>
