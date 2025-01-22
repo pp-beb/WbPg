@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Register</title>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>  <!-- Include SMTPJS -->
 </head>
 <body>
     <h1>Register</h1>
@@ -12,7 +13,7 @@
     <h2 class="HomeIcon" id="HomeIcon" onclick="gotoContent()">&#8962;</h2>
     <div class="RegDiv" id="RegDiv">
         <div class="RegBox" id="RegBox">
-            <form id="InputForm" action="https://formspree.io/f/mannrryn" method="POST">
+            <form id="InputForm">
                 Name:<br/>
                 <input type="text" id="name" name="name" required>
                 <br/><br/>
