@@ -23,6 +23,10 @@ html {
   z-index: 3;
 }
 
+#particles-js-bottom {
+  z-index: -1;
+}
+
 #cover {
   visibility: visible;
   position: fixed; 
@@ -227,6 +231,18 @@ html {
   .header{
     height: 4%;
   }
+
+  #particles-js{
+    visibility: hidden;
+  }
+
+  #particles-js-bottom{
+    height: 200%;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    left: 0;
+  }
 }
 
 @media (max-width: 480px) {
@@ -263,8 +279,21 @@ html {
     display: flex;
   }
   .navItems li {
-    margin: 0 10px; /
+    margin: 0 10px; 
   }
+
+  #particles-js{
+    visibility: hidden;
+  }
+
+  #particles-js-bottom{
+    height: 200%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+  }
+  
 }
 
 .Arrow{
@@ -277,6 +306,11 @@ html {
 width: 30px;
 height: 30px;
 border-radius: 50%;
+}
+
+.social-links img:hover{
+  transform: scale(1.1);
+  transition: 0.5ms ease;
 }
 
 .HomeIcon {

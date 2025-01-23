@@ -90,3 +90,24 @@ h1 {
     vertical-align: top;
   }
 }
+
+.github {
+  position: fixed;
+  left: 2%;
+  bottom: 5%;
+  font-size: x-large;
+  color: white;
+  cursor: pointer;
+  font-family:'Courier New', Courier, monospace;
+
+}
+
+.github:hover{
+ transform: scale(1.2);
+  transition: 0.5s ease;
+}
+
+.github a {
+  color: white;
+  text-decoration: none;
+}

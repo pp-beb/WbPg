@@ -155,3 +155,20 @@ h1 {
   color:bisque;
   font-style: cursive;
 }
+
+.icons{
+  display: flex;
+  justify-content: space-around;
+  margin: 5%;
+}
+
+.icons a{
+  color: white;
+  font-size: x-large;
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+
+.icons a:hover{
+  transform: scale(1.2);
+}
