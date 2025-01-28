@@ -684,5 +684,20 @@ body{
             display: none;
           }
 
-          
+@media(max-width:768px){
+    .playingDiv{
+        position: absolute;
+        top: 15%;
+        left: 30%;
+        transform: rotate(90deg);
+    }
+
+    .listDiv{
+       
+        position: absolute;
+       top: 50%;
+       left: 25%;
+       transform: rotate(90deg);
+    }
+}
       
