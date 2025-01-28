@@ -687,7 +687,7 @@ body{
 @media(max-width:768px){
     .playingDiv{
         position: absolute;
-        top: 15%;
+        top: 5%;
         left: 30%;
         transform: rotate(90deg);
     }
@@ -695,7 +695,7 @@ body{
     .listDiv{
        
         position: absolute;
-       top: 50%;
+       top: 55%;
        left: 25%;
        transform: rotate(90deg);
     }
