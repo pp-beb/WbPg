@@ -57,6 +57,7 @@ document.addEventListener('DOMContentLoaded', () => {
   window.showClock = () => window.open("clock.html", "_blank");
   window.showHover = () => window.open("hoverEffects.html", "_blank");
   window.showConverter = () => window.open("currency.html", "_blank");
+  window.showWeather = () => window.open("weather.html", "_blank");
   window.showCV = () => window.open("CV.pdf", "_blank");
   window.showCCT = () => window.open("CCT.pdf", "_blank");
   
@@ -68,6 +69,8 @@ function removeCover() {
   document.getElementById('cover').style.visibility="hidden";
   document.getElementById('backIcon').style.visibility="visible";
   document.getElementById('cool-button-cover').style.visibility="hidden";
+  document.getElementById('HomeIcon2').style.visibility="hidden";
+  document.getElementById('HomeIcon').style.visibility="visible";
   document.getElementById('icons').style.visibility="hidden";
   document.getElementById('particles-js').style.zIndex="-1";
   document.getElementById('particles-js-bottom').style.zIndex="-1";
@@ -83,6 +86,8 @@ function gotoCover(){
   document.getElementById('backIcon').style.visibility="hidden";
   document.getElementById('cool-button-cover').style.visibility="visible";
   document.getElementById('icons').style.visibility="visible";
+  document.getElementById('HomeIcon2').style.visibility="visible";
+  document.getElementById('HomeIcon').style.visibility="hidden";
   document.getElementById('particles-js').style.zIndex="3";
   document.getElementById('particles-js-bottom').style.zIndex="3";
 }
