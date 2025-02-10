@@ -135,6 +135,7 @@ h1 {
     color:bisque;
     font-style: cursive;
   }
+
 }
 
 .MeImg2 {
@@ -158,8 +159,8 @@ h1 {
 
 .icons{
   display: flex;
-  justify-content: space-around;
-  margin: 5%;
+  justify-content: center;
+  gap: 10%;
 }
 
 .icons a{

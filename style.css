@@ -20,9 +20,11 @@ html {
   position: absolute;
   width: 100%;
   height: 100%;
-  z-index: 3;
 }
 
+#particles-js{
+  z-index: 3;
+}
 #particles-js-bottom {
   z-index: -1;
 }
@@ -318,7 +320,7 @@ border-radius: 50%;
   right: 2%;
   top: 4%;
   font-size: xx-large;
-  visibility: visible;
+  visibility: hidden;
   z-index: 5;
   color: white;
   cursor: pointer;
@@ -407,4 +409,23 @@ border-radius: 50%;
 
 .icons a:hover{
   transform: scale(1.2);
+  color: white;
+}
+
+.HomeIcon2 {
+  position: fixed;
+  right: 50%;
+  transform: translate(50%);
+  top: 10%;
+  font-size: 4rem;
+  visibility: visible;
+  z-index: 5;
+  color: white;
+  cursor: pointer;
+}
+
+
+.HomeIcon2:hover{
+  text-shadow: white 4px 4px 0px;
+  transition: 0.1s ease;
 }
