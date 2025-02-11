@@ -42,12 +42,6 @@ document.addEventListener('DOMContentLoaded', () => {
   const albums = document.querySelectorAll('.carousel-item');
   let index = 0;
 
-  function displayAlbums() {
-    albums.forEach(album => album.classList.remove('active'));
-    albums[index].classList.add('active');
-    index = (index + 1) % albums.length;
-    setTimeout(displayAlbums, 3000);
-  }
 
   displayAlbums();
 
@@ -72,10 +66,8 @@ function removeCover() {
   document.getElementById('HomeIcon2').style.visibility="hidden";
   document.getElementById('HomeIcon').style.visibility="visible";
   document.getElementById('icons').style.visibility="hidden";
-  document.getElementById('particles-js').style.zIndex="-1";
-  document.getElementById('particles-js-bottom').style.zIndex="-1";
- 
-  
+  document.getElementById('particles-js').style.visibility="hidden";
+  document.getElementById('particles-js-bottom').style.visibility="hidden";
 }
 
 function gotoCover(){
@@ -90,4 +82,19 @@ function gotoCover(){
   document.getElementById('HomeIcon').style.visibility="hidden";
   document.getElementById('particles-js').style.zIndex="3";
   document.getElementById('particles-js-bottom').style.zIndex="3";
+  document.getElementById('particles-js').style.visibility="visible";
+  document.getElementById('particles-js-bottom').style.visibility="visible";
 }
+
+function gotoContent(){
+  if(document.getElementById('goto').style.visibility==="hidden"){
+  document.getElementById('goto').style.visibility="visible";}
+  else{
+      document.getElementById('goto').style.visibility="hidden";
+  }
+}
+
+window.gotoAbout = () =>  window.open("about.html","_self");
+window.gotoPortfolio = () =>  window.open("portfolio.html","_self");
+window.gotoProjects = () =>  window.open("projects.html","_self");
+window.gotoRegister = () =>  window.open("register.html","_self");

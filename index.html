@@ -20,7 +20,13 @@
     <a href="https://www.linkedin.com/in/prithak-koirala-2253802b1/?originalSubdomain=np" target="_blank" class="LINKEDIN"><i class="fab fa-linkedin"></i></a>
     </div>
   <button class="cool-button-cover" id="cool-button-cover" onclick="showCV()">Resume</button>
-  <h2 class="HomeIcon" id="HomeIcon" onclick="removeCover()">&#8962;</h2>
+  <h2 class="HomeIcon" id="HomeIcon" onclick="gotoContent()">&#8962;</h2>
+  <div class="goto" id="goto">
+    <div class="goto1" id="goto1" onclick="gotoAbout()">About</div>
+    <div class="goto2" id="goto2" onclick="gotoPortfolio()">Portfolio</div>
+    <div class="goto3" id="goto3" onclick="gotoProjects()">Projects</div>
+    <div class="goto4" id="goto4" onclick="gotoRegister()">Register</div>
+</div>
   <h2 class="HomeIcon2" id="HomeIcon2" onclick="removeCover()">&#8962;</h2>
   <h2 class="backIcon" id="backIcon" onclick="gotoCover()">&#8592;</h2>
   <h2 class="registerIcon" id="registerIcon"><a href="register.html">&#128100;</a></h2>
@@ -36,13 +42,41 @@
     </nav>
   </header>
 <div class="top" id="top"></div>
+<br/>
   <section id="about" class="section">
-    <h2>Know Me <a href="about.html" class="Arrow">&#8594;</a></h2>
-    <p>Hi! I'am Prithak, An aspiring computer engineer, enthusiastic for tech and web-dev.</p>
-  </section>
+    <div>
+    <p><br/><br/>
+      Hello! I’m Prithak, a 20-year-old computer engineering student based in Banepa with a passion 
+      for technology and innovation. I’m deeply interested in web development and programming, constantly
+       exploring and learning to expand my skills in these dynamic fields. Creativity drives me,
+        whether I’m crafting intuitive web designs or tackling complex coding challenges. Alongside
+         my technical pursuits, I’m an active and social individual who thrives in both leadership
+          roles and as a collaborative team member, always aiming to bring out the best in any group
+          I’m part of. With a curious mind and a dedication to growth, I’m excited to contribute to 
+          the ever-evolving world of technology while leaving a creative mark along the way.
+      </p>
+      <a href="about.html" class="Arrow"> <h4>More .... &#8594;</h4></a>
+    </div>
 
+    <img src="me6.jpg" class="myImg">
+  </section>
+  <svg width="100%" height="200" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0,100 C 150,50, 250,150, 400,100 C 550,50, 650,150, 800,100 C 950,50, 1050,150, 1200,100 C 1350,50, 1450,150, 1500,100"
+      stroke="white" fill="transparent" stroke-width="5"/>
+  </svg>
   <section id="albums" class="section">
-    <h2>Portfolio <a href="portfolio.html" class="Arrow">&#8594;</a></h2>
+    <div class="skills" id="skills">
+      <div class="skills1">
+      <span id="react"><i class="fa-brands fa-react"></i></span>
+      <span id="cpp"><i class="fa-solid fa-c"></i><sup>++</sup></i></span>
+      <span id="html"><i class="fa-brands fa-html5"></i></span>
+    </div>
+    <div class="skills1">
+      <span id="css"><i class="fa-brands fa-css3-alt"></i></span>
+      <span id="js"><i class="fa-brands fa-js"></i></span>
+      <span id="c"><i class="fa-solid fa-c"></i></span>
+    </div>
+  </div>
     <div id="album-carousel" class="carousel">
       <div class="carousel-item">
         <h3>CV</h3>
@@ -53,10 +87,28 @@
         <button class="cool-button" onclick="showCCT()">&#8595;</button>
       </div>
     </div>
+    <div class="tools" id="tools">
+      <div class="tools1">
+        <span id="git"><i class="fa-brands fa-git"></i></span>
+        <span id="github"><i class="fa-brands fa-github"></i></span>
+        <span id="latex"><i class="devicon-latex-original"></i></span>
+    </div>
+    <div class="tools1">
+      <span id="notebook"><i class="devicon-jupyter-plain"></i></span>
+        <span id="vsc"><i class="devicon-vscode-plain"></i></span>
+        <span id="My-SQL"><i class="fas fa-database"></i></span>
+    </div>
+  </div>
+   <div class="portfolioArrow"><a href="portfolio.html" class="Arrow"> <h3>Portfolio</h3>&#8594;</a></div>
   </section>
+  <svg width="100%" height="200" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0,100 C 200,10, 400,190, 600,100 C 800,10, 1000,190, 1200,100 C 1400,10, 1600,190, 1800,100"
+      stroke="white" fill="transparent" stroke-width="5"/>
+  </svg>
+  
 
   <section id="tickets" class="section tickets">
-    <h2>Projects <a href="projects.html" class="Arrow">&#8594;</a></h2>
+   <div class="projectArrow"> <a href="projects.html" class="Arrow"><h3>Projects &#8594;</h3></a></div>
     <div class="ticket1">
       <h3>Music Player</h3>
       <p>Made using: HTML, CSS, JS</p>
@@ -77,6 +129,10 @@
       <button class="cool-button" onclick="showClock()">Go To</button>
     </div>
   </section>
+  <svg width="100%" height="200" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0,100 C 150,30, 250,170, 400,100 C 550,30, 650,170, 800,100 C 950,30, 1050,170, 1200,100 C 1350,30, 1450,170, 1500,100"
+      stroke="white" fill="transparent" stroke-width="5"/>
+  </svg>
   <footer id="contact" class="footer">
     <h2>Contact</h2>
     <p>Email: officialprithak@gmail.com</p>

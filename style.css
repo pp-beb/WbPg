@@ -119,29 +119,69 @@ html {
   font-weight: bold;
 }
 
+.myImg{
+    width: 33%;
+    object-fit: cover;
+    border-radius: 50% 45% 50% 55% / 60% 50% 40% 50%;
+    border: 5px solid white;
+}
 .section {
   padding: 2rem;
   text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
-
+#about{
+  font-size: 1.5rem;
+  color: #c6c4c4;
+}
 .section h2 {
   color: #ddc267;
   font-family: cursive;
 }
 
 .section p {
-  color: #8b8787;
   font-style: italic;
 }
 
-.carousel {
+.skills{
   display: flex;
+  align-items: center;
   justify-content: center;
-  overflow: hidden;
+}
+
+.skills1{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.skills1 span{
+margin: 10px;
+font-size: 2rem;
+}
+
+.tools{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tools1{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.tools1 span{
+margin: 10px;
+font-size: 2rem;
 }
 
 .carousel-item {
-  display: none;
   text-align: center;
 }
 
@@ -155,6 +195,7 @@ html {
 .carousel-item.active {
   display: block;
 }
+
 
 .cool-button {
   background: linear-gradient(to right, #ff5f6d, #ffc371);
@@ -196,14 +237,30 @@ html {
 }
 
 @media (max-width: 768px) {
+
+  #about{
+    font-size: 1.08rem;
+  }
+
+  .skills1{
+flex-direction: row;
+visibility: hidden;
+  }
+
+  .tools1{
+flex-direction: row;
+visibility: hidden;
+  }
   .header nav ul {
     flex-direction: column;
     gap: 0.5rem;
   }
 
-  .carousel {
+  .section {
     flex-direction: column;
   }
+
+
 
   .ticket1, .ticket2, .ticket3 {
     width: 90%;
@@ -286,6 +343,7 @@ html {
 
   #particles-js{
     visibility: hidden;
+    display: none;
   }
 
   #particles-js-bottom{
@@ -294,6 +352,16 @@ html {
     position: absolute;
     top: 0;
     z-index: -1;
+  }
+
+  .portfolioArrow{
+    width: 50%;
+    aspect-ratio: 3/1;
+  }
+
+  .projectArrow{
+    width: 50%;
+    aspect-ratio: 3/1;
   }
   
 }
@@ -351,6 +419,9 @@ border-radius: 50%;
   text-decoration: none;
 }
 
+a{
+  text-decoration: none;
+}
 .backIcon {
   visibility: hidden;
   position: fixed;
@@ -428,4 +499,60 @@ border-radius: 50%;
 .HomeIcon2:hover{
   text-shadow: white 4px 4px 0px;
   transition: 0.1s ease;
+}
+
+.goto{
+  width: 15%;
+  background-color: #444;
+  opacity: 0.7;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  right: 2%;
+  top: 16%;
+  height: 20%;
+  align-items: center;
+  justify-content: center;
+  visibility: hidden;
+  z-index: 5;
+}
+
+.goto1, .goto2, .goto3, .goto4{
+  width: 100%;
+  height: 25%;
+  cursor: pointer;
+  font-size: 1rem;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-align: center;
+  color:#ddc267;
+}
+
+.goto1:hover, .goto2:hover, .goto3:hover, .goto4:hover{
+  background-color: #555;
+  color: white;
+}
+
+.portfolioArrow{
+  width: 20%;
+  aspect-ratio: 1/1;
+  border-radius: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.portfolioArrow:hover{
+  background-color: #777;
+}
+
+.projectArrow{
+  width: 20%;
+  aspect-ratio: 1/1;
+  border-radius: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.projectArrow:hover{
+  background-color: #777;
 }
