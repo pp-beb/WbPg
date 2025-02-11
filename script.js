@@ -60,6 +60,10 @@ document.addEventListener('DOMContentLoaded', () => {
   window.showWeather = () => window.open("weather.html", "_blank");
   window.showCV = () => window.open("CV.pdf", "_blank");
   window.showCCT = () => window.open("CCT.pdf", "_blank");
+  window.gotoAbout = () =>  window.open("about.html","_self");
+window.gotoPortfolio = () =>  window.open("portfolio.html","_self");
+window.gotoProjects = () =>  window.open("projects.html","_self");
+window.gotoRegister = () =>  window.open("register.html","_self");
   
 });
 
@@ -90,4 +94,12 @@ function gotoCover(){
   document.getElementById('HomeIcon').style.visibility="hidden";
   document.getElementById('particles-js').style.zIndex="3";
   document.getElementById('particles-js-bottom').style.zIndex="3";
+}
+
+function gotoContent(){
+  if(document.getElementById('goto').style.visibility==="hidden"){
+  document.getElementById('goto').style.visibility="visible";}
+  else{
+      document.getElementById('goto').style.visibility="hidden";
+  }
 }

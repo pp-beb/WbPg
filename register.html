@@ -5,12 +5,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Register</title>
-    <script src="https://smtpjs.com/v3/smtp.js"></script>  <!-- Include SMTPJS -->
+    <script src="https://smtpjs.com/v3/smtp.js"></script> 
 </head>
 <body>
     <h1>Register</h1>
     <h2 class="backIcon" id="backIcon" onclick="gotoCover()">&#8592;</h2>
     <h2 class="HomeIcon" id="HomeIcon" onclick="gotoContent()">&#8962;</h2>
+    <div class="goto" id="goto">
+        <div class="goto1" id="goto1" onclick="gotoAbout()">About</div>
+        <div class="goto2" id="goto2" onclick="gotoPortfolio()">Portfolio</div>
+        <div class="goto3" id="goto3" onclick="gotoProjects()">Projects</div>
+        <div class="goto4" id="goto4" onclick="gotoRegister()">Register</div>
+    </div>
     <div class="RegDiv" id="RegDiv">
         <div class="RegBox" id="RegBox">
             <form id="InputForm">
