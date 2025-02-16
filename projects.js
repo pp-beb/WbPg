@@ -5,6 +5,7 @@ window.showClock = () => window.open("clock.html", "_blank");
 window.showHover = () => window.open("hoverEffects.html", "_blank");
 window.showWeather = () => window.open("weather.html", "_blank");
 window.showConverter = () => window.open("currency.html", "_blank");
+window.showTodo = () => window.open("https://to-do-list-sooty-six-42.vercel.app", "_blank");
 
 window.gotoCover = () => window.location.href = "index.html";
 function gotoContent(){
